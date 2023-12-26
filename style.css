@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk';
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .5);
+    display: flex;
+    width: 40rem;
+    border-radius: 2rem;
+}
+
+.result {
+    text-align: center;
+    width: 50%;
+    padding: 3rem;
+    background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 2rem;
+    gap: 1.5rem;
+}
+
+.result > span{
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+}
+
+.result > div {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    padding: 1rem;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result > div > h1 {
+    font-size: 3.5rem;
+}
+
+.result > div > p {
+    color: hsl(241, 100%, 89%);
+}
+
+.result > p {
+    color: hsl(241, 100%, 89%);
+}
+
+.summary {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary > p {
+    font-weight: 800;
+    margin-bottom: 1.3rem;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text > div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.text > p {
+    color: gray;
+}
+
+.text > p > span {
+    color: black;
+}
+
+.text:nth-of-type(1) {
+    color: hsl(0, 100%, 67%);
+    background-color: #FFF6F5;
+}
+
+.text:nth-of-type(2) {
+    color: hsl(39, 100%, 56%);
+    background-color: #FFFBF2;
+}
+.text:nth-of-type(3) {
+    color: hsl(166, 100%, 37%);
+    background-color: #F2FBFA;
+}
+.text:nth-of-type(4) {
+    color: hsl(234, 85%, 45%);
+    background-color: #F3F3FD;
+}
+
+.summary > button {
+    margin-top: 1rem;
+    color: white;
+    font-weight: 600;
+    border: none;
+    background: #303B59;
+    padding: 1rem 0;
+    border-radius: 2rem;
+}
+
+.summary > button:hover {
+    background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+}
+
+footer > a {
+    color: hsl(228, 45%, 44%);
+}
